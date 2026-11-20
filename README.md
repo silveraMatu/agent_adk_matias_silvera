@@ -103,14 +103,6 @@ adk run gastos_agent
 | "Mostrame mis gastos de salud" (sin datos) | informa que no hay gastos de esa categoría |
 | "Gasté 100 en comida el 31/02" | informa que la fecha es inválida y pide `AAAA-MM-DD` |
 
-## Tests
-
-```bash
-python -m pytest
-```
-
-Cubren casos válidos, argumentos inválidos (montos, fechas, ids, límites) y resultados vacíos. Usan una base de datos temporal (variable `GASTOS_DB`), no tocan `gastos.db`.
-
 ## Autor
 
 Matías Silvera
